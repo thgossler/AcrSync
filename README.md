@@ -1,4 +1,33 @@
-# General Introduction
+<div align="center">
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
+</div>
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h1 align="center">AcrSync</h1>
+
+  <p align="center">
+    Synchronize repositories and tags from a source to a target Azure Container Registry.
+    <br />
+    <a href="https://github.com/thgossler/AcrSync/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/thgossler/AcrSync/issues">Request Feature</a>
+    ·
+    <a href="https://github.com/thgossler/AcrSync#contributing">Contribute</a>
+    ·
+    <a href="https://github.com/sponsors/thgossler">Sponsor project</a>
+  </p>
+</div>
+
+
+## General Introduction
 
 This script synchronized repositories and tags from a source to a target 
 Azure Container Registry. It also removes items from the target registry 
@@ -16,7 +45,8 @@ mentioned under [Input Parameters](#input-parameters) are evaluated.
 
 The sync can also be built and run as a Docker container.
 
-# Scripts
+
+## Scripts
 
 All scripts take parameters and can be called like cmdlets.
 
@@ -30,7 +60,8 @@ All scripts take parameters and can be called like cmdlets.
 
 `Docker-deploy-aci.ps1` runs a container based on the published image on Azure Container Instances (ACI).
 
-# Prerequisites
+
+## Prerequisites
 
 - PowerShell 7+
 - Az.Accounts module
@@ -38,7 +69,8 @@ All scripts take parameters and can be called like cmdlets.
 - Az.ContainerRegistry module
 - Docker service running
 
-# Input Parameters
+
+## Input Parameters
 
 Input parameters are read from the following environment variables:
 
@@ -83,3 +115,41 @@ Input parameters are read from the following environment variables:
 `ACRSYNC_TARGET_ACI_RESOURCEGROUP_NAME`
 
 `ACRSYNC_TARGET_ACI_NAME`, e.g. 'myContainerGroup'
+
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star :wink: Thanks!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+## License
+
+Distributed under the MIT License. See [`LICENSE`](https://github.com/thgossler/AcrSync/blob/main/LICENSE) for more information.
+
+
+## Contact
+
+Thomas Gossler - [@thgossler](https://twitter.com/thgossler)<br/>
+Project Link: [https://github.com/thgossler/AcrSync](https://github.com/thgossler/AcrSync)
+
+
+<!-- MARKDOWN LINKS & IMAGES (https://www.markdownguide.org/basic-syntax/#reference-style-links) -->
+[contributors-shield]: https://img.shields.io/github/contributors/thgossler/AcrSync.svg
+[contributors-url]: https://github.com/thgossler/AcrSync/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/thgossler/AcrSync.svg
+[forks-url]: https://github.com/thgossler/AcrSync/network/members
+[stars-shield]: https://img.shields.io/github/stars/thgossler/AcrSync.svg
+[stars-url]: https://github.com/thgossler/AcrSync/stargazers
+[issues-shield]: https://img.shields.io/github/issues/thgossler/AcrSync.svg
+[issues-url]: https://github.com/thgossler/AcrSync/issues
+[license-shield]: https://img.shields.io/github/license/thgossler/AcrSync.svg
+[license-url]: https://github.com/thgossler/AcrSync/blob/main/LICENSE
